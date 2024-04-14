@@ -99,7 +99,8 @@ button:hover {
     background-color: #588071;
 }
 .intro {
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 50px;
 }
 .hello {
     font-size: 8rem;
@@ -167,6 +168,28 @@ button:hover {
 .myworktitle {
     font-size: 40px;
     font-weight: 700;
+}
+.find-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+}
+.arrow {
+    top: 0.75px;
+    position: absolute;
+    margin-left: 10px;
+}
+.squiggly-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.squiggly-2 {
+    position: absolute;
+    left: 996px;
 }
 
 /* ANIMATIONS */
