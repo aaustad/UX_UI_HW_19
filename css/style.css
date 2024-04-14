@@ -116,7 +116,7 @@ button:hover {
 .mywork {
     padding: 20px;
     margin-top: 100px;
-    width: 80%;
+    width: 70%;
     justify-content: center;
     position: relative;
 }
@@ -200,6 +200,13 @@ button:hover {
     animation: 2s fadeInUp;
 }
 
+.squiggly-container {
+    animation: 1.5s fadeInRight;
+}
+.arrow {
+    animation: 2s arrow-bounce;
+}
+
 @keyframes fadeInUp {
     0% {
         transform: translateY(50%);
@@ -210,4 +217,34 @@ button:hover {
         opacity: 1;
     }
 }
+
+@keyframes fadeInRight {
+    0% {
+        transform: translatex(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translatex(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes arrow-bounce {
+    0% {
+        transform: translatex(0px);
+    }
+    25% {
+        transform: translatex(25px);
+    }
+    50% {
+        transform: translatex(0px);
+    }
+    75% {
+        transform: translatex(25px);
+    }
+    100% {
+        transform: translatex(0px);
+    }
+}
+
 /* END ANIMATIONS */
